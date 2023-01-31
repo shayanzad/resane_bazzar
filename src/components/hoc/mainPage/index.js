@@ -12,7 +12,7 @@ function MainPage({ children }) {
 
       <Navbar />
       <>
-        {isLoading ? <p>loading....</p> : children}
+        {isLoading ? <p>loading....</p> : <div className="mainContentChildren">{children}</div>}
       </>
       </div>
       <Footer />

@@ -14,6 +14,9 @@ export const StyledContainer = styled.div`
     width: 100%;
     margin-bottom:400px;    
     padding:0;
+    .mainContentChildren{
+      min-height: 25vh;
+    }
 
     @media(max-width:1180px){
       padding: 0 40px;
@@ -21,6 +24,9 @@ export const StyledContainer = styled.div`
 
     @media(max-width:480px){
       padding: 0 20px;
+      .mainContentChildren{
+      min-height: 300px;
+    }
     }
   }
 `;

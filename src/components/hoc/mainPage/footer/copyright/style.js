@@ -9,7 +9,7 @@ p{
     color:var(--primary)!important;
     text-align:center;
     position:absolute;
-    bottom:-5px;
+    bottom:5px;
     right:0;
     left:0;
     
