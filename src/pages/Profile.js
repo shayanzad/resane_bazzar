@@ -1,11 +1,8 @@
-import React from 'react';
-import MainPage from "../components/hoc/mainPage";
+import React from 'react'; 
 import ProfileComponent from "../components/profile"
 function Profile(props) {
     return (
-        <MainPage>
-            <ProfileComponent />
-        </MainPage>
+        <ProfileComponent />
     );
 }
 

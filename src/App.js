@@ -12,6 +12,7 @@ import CompleteResume from "./pages/Profile-jobs";
 import EducationalRecords from "./pages/Profile-educational";
 import UploadDocuments from "./pages/UploadDocuments";
 import WorkReport from "./pages/WorkReport";
+import MainPage from "./components/hoc/mainPage";
 
 
 const Home = React.lazy(() => import("./pages/Home"));
@@ -82,13 +83,15 @@ export default function App() {
                 element={<WorkReport />}
               />
             </Route>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/news" element={<Blogs />} />
-            <Route path="/user-profile/:id" element={<Profile />} />
-            <Route path="/aboutUs/:id" element={<AboutUs />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/news/:id" element={<NewsInfo />} />
+            <Route element={<MainPage />}>
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/news" element={<Blogs />} />
+              <Route path="/user-profile/:id" element={<Profile />} />
+              <Route path="/aboutUs/:id" element={<AboutUs />} />
+              <Route path="/news" element={<News />} />
+              <Route path="/news/:id" element={<NewsInfo />} />
+            </Route>
             <Route path="/register/skills" element={<RegisterSkills />} />
             <Route path="/register/jobs" element={<RegisterJobs />} />
             <Route path="/register/edit" element={<RegisterEditProfile />} />

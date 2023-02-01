@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { StyledContainer } from "./style";
+import { Outlet } from "react-router-dom";
 import Footer from "./footer";
 import Navbar from "./navbar";
 function MainPage({ children }) {
@@ -12,7 +13,7 @@ function MainPage({ children }) {
 
       <Navbar />
       <>
-        {isLoading ? <p>loading....</p> : <div className="mainContentChildren">{children}</div>}
+        {isLoading ? <p>loading....</p> : <div className="mainContentChildren"> <Outlet /></div>}
       </>
       </div>
       <Footer />

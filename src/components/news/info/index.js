@@ -1,4 +1,4 @@
-import MainPage from "../../hoc/mainPage";
+ 
 import { useParams } from "react-router-dom";
 import React, { useState } from "react";
 import { StyledContainer } from "./style";
@@ -23,7 +23,7 @@ const Info = () => {
         { id: 3, text: `متاورس" زندگی آینده ما را شکل می‌دهد و با وجود اینکه شاید به دلیل نداشتن شناخت کافی از آن ترسناک به نظر برسد اما پذیرفتن آن اجتناب‌ناپذیر است.`, title: `قلب تپنده هر سازمانی "روابط عمومی" است`, tags: ['طراحی لوگو'], minute: 6, date: '۰۸ دی ۱۴۰۰', imgFile: '../../../../../src/assets/images/news/img3.png' },
     ]);
     return (
-        <MainPage>
+       
             <StyledContainer>
                 <div className="quickParent">
                     <div className="socialBox">
@@ -115,7 +115,7 @@ const Info = () => {
           </div>
         </div>
       </StyledContainer>
-    </MainPage>
+     
   );
 };
 

@@ -1,11 +1,8 @@
-import React from 'react';
-import MainPage from "../components/hoc/mainPage";
+import React from 'react'; 
 import AboutUsComponent from "../components/about-us"
 function AboutUs(props) {
     return (
-        <MainPage>
-            <AboutUsComponent />
-        </MainPage>
+        <AboutUsComponent />
     );
 }
 

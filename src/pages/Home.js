@@ -7,9 +7,9 @@ const Home = () => {
   const [data, setData] = useState([]);
 
   return (
-    <MainPage>
+     
       <HomeComponent />
-    </MainPage>
+     
   );
 };
 
