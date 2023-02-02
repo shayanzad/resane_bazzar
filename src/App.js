@@ -5,6 +5,7 @@ import PrivateRoutes from "./PrivateRoutes";
 import PanelPage from "./components/hoc/panelPage";
 
 import Dashboard from "./pages/dashboard";
+// import Dashboard from "./pages/dashboard";
 import Projects from "./pages/Projects";
 import EditProfil from "./pages/EditProfile";
 import CompleteProfile from "./pages/Profile-skills";

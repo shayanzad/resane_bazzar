@@ -5,7 +5,7 @@ const StyledCustomDatePicker = Styled.div`
     width: 340px;
     border-radius: 16px;
     height: 54px;
-
+    
   }
 `;
 
